@@ -1,9 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router";
 import "./assets/css/App.css";
+import { Homepage } from "./pages/HomePage";
+import MovieDetailPage from "./pages/MovieDetailPage";
 
 function App() {
   return (
     <>
-      <h1>Hello world</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Homepage />} />
+          <Route path="movie/:id" element={<MovieDetailPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
