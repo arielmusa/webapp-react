@@ -19,10 +19,7 @@ export default function HomePage() {
               <div className="card">
                 <div className="card-body">
                   <p className="card-text"> {movie.title}</p>
-                  <NavLink
-                    to={`movies/${movie.id}`}
-                    className="btn btn-primary"
-                  >
+                  <NavLink to={`movie/${movie.id}`} className="btn btn-primary">
                     Go somewhere
                   </NavLink>
                 </div>
