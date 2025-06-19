@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
+import ReviewForm from "../components/ReviewForm";
 
 const apiUrl = "http://localhost:3000";
 
@@ -23,6 +24,7 @@ export default function MovieDetailPage() {
           <div>{movie.map((movie) => movie.title)}</div>
         </div>
       </div>
+      <ReviewForm />
     </>
   );
 }
